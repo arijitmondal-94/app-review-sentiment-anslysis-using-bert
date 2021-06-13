@@ -1,4 +1,3 @@
-import transformers
 import os
 from torch import nn
 from transformers import BertModel
@@ -22,8 +21,6 @@ class SentimentClassifier():
         output = self.out(output)
 
         return self.softmax(output)
-
-
 def main():
     model = SentimentClassifier(len(class_names))
     model = model.to(device)
