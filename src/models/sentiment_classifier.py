@@ -26,7 +26,7 @@ class SentimentClassifier():
 
 def main():
     model = SentimentClassifier(len(class_names))
-    mdoel = model.to(device)
+    model = model.to(device)
 
 if __name__ == '__main__':
     main()
