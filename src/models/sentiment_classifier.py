@@ -13,13 +13,9 @@ class SentimentClassifier():
         self.softmax = nn.Softmax(dim=1)
 
     def forward(self, input_ids, attention_mask):
-        _, pooled_output = self.bert(
-            input_ids = input_ids,
-            attention_mask = attention_mask
-        )
+        _, pooled_output = self.bert(input_ids = input_ids, attention_mask = attention_mask)
         output = self.drop(pooled_output)
         output = self.out(output)
-
         return self.softmax(output)
 def main():
     model = SentimentClassifier(len(class_names))
