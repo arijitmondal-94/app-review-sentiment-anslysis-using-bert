@@ -84,6 +84,9 @@ instance/
 docs/_build/
 doc/_build/
 
+# Pytorch stuff
+*.pt
+
 # PyBuilder
 target/
 

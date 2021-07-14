@@ -1,4 +1,4 @@
 {
-    "python.pythonPath": "/Users/arijitmondal/anaconda3/envs/appReviewEnv/bin/python",
+    "python.pythonPath": "/Users/arijitmondal/workspace/app-review-sentiment-analysis-using-bert/venv/bin/python3",
     "python.formatting.provider": "autopep8",
 }

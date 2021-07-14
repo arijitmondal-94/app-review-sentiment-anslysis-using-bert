@@ -4,9 +4,13 @@ title = "Google Playstore App review Sentiment Classifier"
 requires = ["setuptools", "wheel"]
 build-backend = "setuptools.build_meta"
 
-[training-parameters]
+[training]
 model = "bert-base-uncased"
 tokenizer = "bert-base-uncased"
 max_length = 160
 batch_size = 16
 epochs = 50
+
+[prediction]
+model = "/Users/arijitmondal/workspace/app-review-sentiment-analysis-using-bert/models/best_model_state.pt"
+class_names = ["negative", "neutral", "positive"]

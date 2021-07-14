@@ -3,6 +3,7 @@ import pandas as pd
 import transformers
 import numpy as np
 
+from collections import defaultdict
 from datetime import datetime
 from torch import nn
 from transformers import optimization
@@ -93,7 +94,7 @@ def main():
         history['val_loss'].append(val_loss)
         
         if val_accuracy > best_accuracy:
-            torch.model(model, )
+            torch.model(model, './app-review-sentiment-analysis-using-bert/data/'+str(datetime.now())+'.pt')
 
 if __name__ == "__main__":
     main()
